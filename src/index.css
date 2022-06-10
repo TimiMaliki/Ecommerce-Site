@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    max-width: 1100px;
+    height: 30vh;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.brand__name{
+    margin: 40px 13px;
+    font-size: 45px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navbar ul{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    
+}
+.navbar a{
+    color:#000;
+    font-size: 15px;
+}
+.navbar a:hover{
+    color: #f5761A;
+    content: "";
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #f5761A;
+    transition: all 0.8s ;
+    padding: 10px;
+}
+
+
+
+
