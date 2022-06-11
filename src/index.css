@@ -95,13 +95,18 @@ body {
 .arrival-grid img{
     width: 200px;
     height: 300px;
+    border-radius: 4px;
 }
-.arrival-img{
+.img-grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 2rem;
+    width: 100%;
+    height: 70vh;
 }
-.arrival-img img {
+.bx1,
+.bx2,
+.bx3,
+.bx4{
     border: 2px solid red;
-    background: #000;
 }
