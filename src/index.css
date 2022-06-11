@@ -92,8 +92,16 @@ body {
  transform: translateY(50px);
  font-size: 25px;
 }
+.arrival-grid img{
+    width: 200px;
+    height: 300px;
+}
 .arrival-img{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 2rem;
+}
+.arrival-img img {
+    border: 2px solid red;
+    background: #000;
 }
