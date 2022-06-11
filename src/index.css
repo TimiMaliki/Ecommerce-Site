@@ -122,6 +122,18 @@ body {
     background:  #f5761A;
 }
 .collection{
-    height: 100vh;
+    height: 150vh;
     background: #f3f3f3;
+}
+.Cgrid-img{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  repeat(2,1fr);
+     gap: 1rem;
+}
+.span-two{
+    grid-column: span 2
+}
+.span-four{
+    grid-column: span 2
 }
