@@ -1,43 +1,99 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.header{
-    max-width: 1100px;
-    height: 30vh;
+
+body {
+    width: 100%;
+}
+
+.header {
+    max-width: 1200px;
     margin: 0 auto;
     overflow: auto;
     padding: 0 20px;
     justify-content: space-between;
+    background: rgb(209, 142, 18);
+    color: #000;
+    position: relative;
 }
-.brand__name{
+
+.brand__name {
     margin: 40px 13px;
     font-size: 45px;
-  font-weight: bold;
-  cursor: pointer;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
 }
-.navbar ul{
+
+.navbar ul {
     margin: auto;
     display: flex;
     justify-content: center;
     gap: 4rem;
-    
+
 }
-.navbar a{
-    color:#000;
-    font-size: 15px;
+
+.navbar a {
+    color: #fff;
+    font-size: 17px;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: #f5761A;
     content: "";
     display: flex;
     width: 100%;
     border-bottom: 1px solid #f5761A;
-    transition: all 0.8s ;
+    transition: all 0.8s;
     padding: 10px;
 }
 
+.display {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)),
+        url('../pics/img2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-
-
+.display-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-size: 25px;
+    color: #fff;
+}
+.shop-now{
+    width: 400px;
+    height: 30px;
+    background: #f2f2f2;
+    border-radius: 6px;
+}
+.shop-now h2{
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+.shop-now h2:hover{
+    color: blue;
+}
+.shop-now:hover{
+    background: #f5761A;
+}
+.new-arrival{
+    height: 100vh;
+    background: #f3f3f3;
+}
+.arrival-text h3{
+ transform: translateY(50px);
+ font-size: 25px;
+}
+.arrival-img{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+}
