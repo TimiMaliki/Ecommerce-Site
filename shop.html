@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,38 @@
     <link rel="stylesheet" href="./src/shop.css">
     <link rel="stylesheet" href="./src/utility.css">
 </head>
+
 <body>
     <div class="shop">
         <div class="shop-grid grid">
             <div class="cloth">
-            <img src="./pics/img1.jpg" alt="" width="200" height="300">
+                <img src="./pics/img1.jpg" alt="" width="200" height="300">
             </div>
-            <div class="cloth-details">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni expedita modi illo soluta sint reiciendis saepe quas sapiente maxime rem quod dolorum doloribus, fugit explicabo ea! In, labore! Cumque, facilis?
+            <div class="cloth-details m4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Magni expedita modi illo soluta sint reiciendis saepe quas
+                sapiente maxime rem quod dolorum doloribus, fugit
+                explicabo ea! In, labore! Cumque, facilis?
+                <div class="dropdown m4">
+                    <label for="clothes-size">Choose your size:</label>
+                    <select name="cloth" id="cloths">
+                        <option value="rigatoni">L</option>
+                        <option value="dave">XL</option>
+                        <option value="pumpernickel">XXL</option>
+                        <option value="reeses">XXXL</option>
+                    </select>
+                    <div class="dropdown m2">
+                        <button>Related</button>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="">Shirts</a>
+                            <a href="">Suits</a>
+                            <a href="">Pants</a>
+                            </div>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
