@@ -9,22 +9,20 @@ body {
      background: #f3f3f3;
 }
 
-.header {
+.header{
     margin: 0 auto;
     overflow: auto;
     padding: 0 20px;
     justify-content: space-between;
-    background: rgb(209, 142, 18);
+    background:linear-gradient(to right, #00AADD, #00bb65);
     color: #000;
-    position: relative;
 }
-
 .brand__name {
     margin: 40px 13px;
     font-size: 45px;
     font-weight: bold;
     cursor: pointer;
-    color: #000;
+    color: rgb(114, 10, 114);
 }
 .navbar ul {
     margin: auto;
@@ -39,7 +37,8 @@ body {
 }
 
 .navbar a:hover {
-    color: #f5761A;
+    color: purple;
+    font-weight: 700;
     content: "";
     display: flex;
     width: 100%;
