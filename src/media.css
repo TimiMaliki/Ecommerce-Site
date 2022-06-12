@@ -61,6 +61,11 @@ html {
         max-width: 1700px;
         min-height: 500px;
     }
+    .blog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 }
