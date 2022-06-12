@@ -26,13 +26,11 @@ body {
     cursor: pointer;
     color: #000;
 }
-
 .navbar ul {
     margin: auto;
     display: flex;
     justify-content: center;
     gap: 4rem;
-
 }
 
 .navbar a {
@@ -131,4 +129,13 @@ body {
     background-size: cover;
     background-position-x: center;
 }
-
+.blog{
+    height: 100vh;
+    background: #f3f3f3;
+}
+.blogimg-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 90vh;
+    grid-gap: 5rem;
+}

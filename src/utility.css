@@ -55,6 +55,16 @@
 .span-four{
     grid-column: span 2
 }
+.bx1 a{
+    width: 100px;
+    height: 30px;
+    background: red;
+    color: #fff;
+    border-radius: 7px;
+}
+.bx1 a:hover{
+    background: purple;
+}
 
 
         
