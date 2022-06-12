@@ -68,13 +68,9 @@ html {
     }
 }
 @media (min-width:1100px){
-    .header {
-        width: 100%;
-        background: blue;
-    }
     .shop-now {
         margin-top: -230px;
-        transform: translateX(80px);
+        transform: translateX(120px);
         width: 400px;
     }
     .bx1,
