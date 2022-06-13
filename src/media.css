@@ -77,7 +77,7 @@ html {
     }
     .shop-now {
         margin-top: -230px;
-        transform: translateX(120px);
+      
         width: 400px;
         display: flex;
         justify-content: center;
@@ -108,14 +108,14 @@ html {
         transform: translateX(-90px);
     }
 }
-@media (min-width:900px){
+@media (min-width:1000px){
     body {
         width: 100%;
         overflow-x: hidden;
     }
     .shop-now {
         margin-top: -230px;
-        transform: translateX(120px);
+       margin-left: 330px;
         width: 400px;
         display: flex;
         justify-content: center;
