@@ -15,7 +15,7 @@ html {
 }
 
 
-@media (max-width:1500px) {
+@media screen and (max-width:1500px) {
     body {
         width: 100%;
         overflow-x: hidden;
@@ -72,7 +72,7 @@ html {
     }
 }
 
-@media (max-width:1300px) {
+@media screen and(max-width:1300px) {
     body {
         width: 100%;
         overflow-x: hidden;
@@ -104,7 +104,7 @@ html {
     }
 }
 
-@media (max-width:1200px) {
+@media screen and (max-width:1200px) {
     body {
         width: 100%;
         overflow-x: hidden;
