@@ -13,7 +13,62 @@
 html {
     overflow-y: auto;
 }
+@media screen and (max-width:1700px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
 
+    .header {
+        width: 100%;
+    }
+
+    .display {
+        width: 100%;
+    }
+
+    .shop-now {
+        margin-top: -230px;
+        margin-left: 620px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .new-arrival {
+        height: 60vh;
+    }
+
+    .img-des {
+        margin: 0px 90px;
+    }
+
+    .collection {
+        height: 150vh;
+        background: #f3f3f3;
+    }
+
+    .Cgrid-img {
+        grid-template-columns: repeat(2, 1fr);
+        background: #000;
+    }
+
+    .sellers {
+        height: 150vh;
+    }
+
+    .for-men {
+        max-width: 1700px;
+        min-height: 500px;
+    }
+
+    .blog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width:1500px) {
     body {
@@ -72,7 +127,7 @@ html {
     }
 }
 
-@media screen and(max-width:1300px) {
+@media screen and (max-width:1390px) and (max-width:1290px) {
     body {
         width: 100%;
         overflow-x: hidden;
@@ -104,7 +159,7 @@ html {
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen  and (max-width:1200px) and (max-width:1250px) and (max-width:1220px){
     body {
         width: 100%;
         overflow-x: hidden;
