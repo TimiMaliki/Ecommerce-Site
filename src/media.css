@@ -14,7 +14,7 @@
 html {
     overflow-y: auto;
 }
-/*
+
 @media screen and (max-width:1700px){
     body {
         width: 100%;
@@ -71,7 +71,7 @@ html {
         align-items: center;
     }
 }
-*/
+
 @media screen and (max-width:1500px) and (max-width:1400px){
     body {
         width: 100%;
