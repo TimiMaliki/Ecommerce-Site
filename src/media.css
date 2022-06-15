@@ -1,3 +1,4 @@
+
 @-o-viewport {
     width: 100%;
 }
@@ -13,6 +14,7 @@
 html {
     overflow-y: auto;
 }
+/*
 @media screen and (max-width:1700px){
     body {
         width: 100%;
@@ -51,7 +53,7 @@ html {
 
     .Cgrid-img {
         grid-template-columns: repeat(2, 1fr);
-        background: #000;
+        background: #fff;
     }
 
     .sellers {
@@ -69,7 +71,7 @@ html {
         align-items: center;
     }
 }
-
+*/
 @media screen and (max-width:1500px) and (max-width:1400px){
     body {
         width: 100%;
