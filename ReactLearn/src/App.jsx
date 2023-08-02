@@ -2,35 +2,22 @@ import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
 import AddItem from "./AddItem";
+import SearchItem from "./SearchItem";
 import React, { useState } from "react";
 
 function App() {
-  const [items, setItems] = useState([
-    {
-      id: 1,
-      checked: true,
-      itemList: "One half pound bag of Cocoa Covered Almonds Unsalted",
-    },
-    {
-      id: 2,
-      checked: false,
-      itemList: "Item 2",
-    },
-    {
-      id: 3,
-      checked: false,
-      itemList: "Item 3",
-    },
-  ]);
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppingList')));
 
   // defining the new state for the addlist component
   const [newItem, setNewItem] = useState("");
 
+  //defining the new state for the searchItem component
+  const [search, setSearch] = useState('')
+
 
   const setAndSave = (newItems)=>{
     setItems(newItems);
-
-    localStorage.getItem("shoppingList", JSON.stringify(newItems));
+    localStorage.setItem('shoppingList', JSON.stringify(newItems));
   }
  
 
@@ -38,9 +25,8 @@ function App() {
              const id = items.length ? items[items.length - 1].id + 1 : 1
              const myNewItem = {id, checked:false , itemList:item}
              const listItems = [...items , myNewItem]
-             setAndSave(listItems);        
-
-             console.log(item)
+             setItems(listItems)
+             setAndSave(listItems)
   }
 
    
@@ -49,13 +35,12 @@ function App() {
     const listItems = items.map((item) =>
       item.id === id ? { ...item, checked: !item.checked } : item
     );
-
-    setItems(listItems);
+    setAndSave(listItems)
   };
 
   const handleDelete = (id) => {
     const listItems = items.filter((item) => item.id !== id);
-    setAndSave(listItems);
+    setAndSave(listItems)
   };
 
   const handleSubmit = (e) => {
@@ -75,9 +60,15 @@ function App() {
         setNewItem={setNewItem}
         handleSubmit={handleSubmit}
       />
+      {/* tis is the SearchItem component */}
+      <SearchItem
+       search={search}
+       setSearch={setSearch}
+       />
       {/* tis is the Content component */}
       <Content
-        items={items}
+        items={items.filter((item) => ((item.itemList).toLowerCase())
+          .includes(search.toLowerCase()) )}
         handleChecked={handleChecked}
         handleDelete={handleDelete}
       />
